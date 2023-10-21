@@ -1,0 +1,9 @@
+@import 'base.scss';
+@import 'bootstrap.scss';
+@import 'todos.scss';
+@import 'helpers.scss';
+
+// Tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,0 +1,8 @@
+<ng-container>
+  <h2>TODO List</h2>
+  <button (click)="addItem()" class="btn btn-success me-3">Add</button>
+  <button (click)="removeItem()" class="btn btn-danger">Delete</button>
+  <div class="row gap-3 m-0 mt-3">
+    <div class="card" *ngFor="let list of itemList" @addItem>{{ list }}</div>
+  </div>
+</ng-container>

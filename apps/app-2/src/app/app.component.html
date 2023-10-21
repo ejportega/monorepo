@@ -1,0 +1,25 @@
+<monorepo-header headingTitle="Application 2"></monorepo-header>
+
+<div class="container my-3">
+  <h1>Monorepo Application 2</h1>
+
+  <mat-tab-group
+    mat-stretch-tabs="false"
+    mat-align-tabs="center"
+    (selectedTabChange)="onTabChange($event.index)"
+  >
+    <mat-tab label="TODOS">
+      <div *ngIf="todos$ | async as todos" class="todos">
+        <monorepo-todo [todos]="todos"></monorepo-todo>
+      </div>
+    </mat-tab>
+    <mat-tab label="EVENTS">
+      <div *ngIf="events$ | async as events">
+        <monorepo-events
+          [events]="events"
+          [showEvents]="showEvents"
+        ></monorepo-events>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

@@ -1,1 +1,9 @@
-<monorepo-nx-welcome></monorepo-nx-welcome> <router-outlet></router-outlet>
+<monorepo-header headingTitle="Application 1"></monorepo-header>
+
+<div class="container my-3">
+  <h1>Monorepo Application 1</h1>
+
+  <div *ngIf="todos$ | async as todos" class="todos">
+    <monorepo-todo [todos]="todos"></monorepo-todo>
+  </div>
+</div>

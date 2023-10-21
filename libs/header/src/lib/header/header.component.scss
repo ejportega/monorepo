@@ -1,0 +1,28 @@
+@import "bootstrap/scss/functions", "bootstrap/scss/variables",
+    "bootstrap/scss/mixins";
+
+:host {
+  display: block;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  background: #190482;
+}
+
+mat-toolbar {
+  background: #190482;
+  color: white;
+}
+
+div.nav-brand {
+  width: 100%;
+  text-align: center;
+}
+
+@include media-breakpoint-up(lg) {
+  div.nav-brand {
+      text-align: start;
+  }
+}

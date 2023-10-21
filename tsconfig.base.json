@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@monorepo/events": ["libs/events/src/index.ts"],
+      "@monorepo/header": ["libs/header/src/index.ts"],
+      "@monorepo/todo": ["libs/todo/src/index.ts"],
+      "@monorepo/ui": ["libs/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
